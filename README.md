@@ -34,13 +34,13 @@ psql postgresql://postgres:password@0.0.0.0:5432/testdb
 ```
 
 ## Create Schema
-
+```sh
 psql testdb < sql/schema.sql -h localhost -U postgres
-
+```
 ## Importa data
-
+```sh
 psql testdb < sql/seed.sql -h localhost -U postgres
-
+```
 ## Verify
 
 ```sh
