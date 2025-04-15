@@ -64,6 +64,24 @@ article {
 .choice.active { border: solid 1px #a765ff; }
 .choice.active .l{ background: #a765ff; }
 
+.choice.correct {
+  background-color: rgba(76, 175, 80, 0.3);
+  border-color: #4CAF50 !important;
+}
+.choice.incorrect {
+  background-color: rgba(244, 67, 54, 0.3);
+  border-color: #F44336 !important;
+}
+.correct-message {
+  color: #4CAF50;
+  font-weight: bold;
+}
+.incorrect-message {
+  color: #F44336;
+  font-weight: bold;
+}
+
+
 .submit { text-align: center }
 .submit button {
   background: #a765ff;
