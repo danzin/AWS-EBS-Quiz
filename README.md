@@ -3,15 +3,10 @@
 npm install
 ```
 
-### Start Server
-```sh
-PORT=4567 npm start
-```
-
-
 ## Run Postgres
 
 ```sh
+cd ../
 docker copmpose up
 ```
 
@@ -27,26 +22,15 @@ sudo apt install postgres
 createdb testdb -h localhost -U postgres
 ```
 
-## Connect to Postgres Client
-
+### Start Server
 ```sh
-psql postgresql://postgres:password@0.0.0.0:5432/testdb 
+PORT=4567 npm start
 ```
+  - The app checks the database and seeds it automatically if required.
 
-## Create Schema
-```sh
-psql testdb < sql/schema.sql -h localhost -U postgres
-```
-## Importa data
-```sh
-psql testdb < sql/seed.sql -h localhost -U postgres
-```
-## Verify
 
-```sh
-psql postgresql://postgres:password@0.0.0.0:5432/testdb 
-```
 
-```sql
-SELECT * FROM questions;
-```
+### Deploying to Elastic Beanstalk
+
+  - 'app.zip' is deployment-ready zipped version of the app because CodeSource is no-longer available for new users
+  - will integrate CI/CD pipeline with git later

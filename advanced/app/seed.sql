@@ -1,3 +1,24 @@
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
+-- Create the tables
+CREATE TABLE public.answers (
+  uuid UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
+  question_uuid UUID NOT NULL,
+  choice CHAR(1) NOT NULL,
+  created_at TIMESTAMP DEFAULT current_timestamp NOT NULL
+);
+
+CREATE TABLE public.questions (
+    uuid UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
+    question TEXT NOT NULL,
+    option_a TEXT NOT NULL,
+    option_b TEXT NOT NULL,
+    option_c TEXT NOT NULL,
+    option_d TEXT NOT NULL,
+    correct_option CHAR(1) NOT NULL
+);
+
+-- Seed data for questions
 INSERT INTO questions (question, option_a, option_b, option_c, option_d, correct_option) VALUES
 ('Which service is used for hosting websites?', 'Amazon RDS', 'Amazon S3', 'Amazon Lambda', 'Amazon DynamoDB', 'B'),
 ('What does AWS IAM stand for?', 'Identity and Access Management', 'Internet Application Manager', 'Infrastructure Automation Module', 'Instance Access Management', 'A'),
