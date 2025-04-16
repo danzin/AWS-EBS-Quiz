@@ -32,7 +32,6 @@ PORT=4567 npm start
 
 
 
-### Deploying to Elastic Beanstalk
-
+###  Deploying to Elastic Beanstalk  ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
   - 'app.zip' is deployment-ready zipped version of the app because CodeSource is no-longer available for new users
   - will integrate CI/CD pipeline with git later
