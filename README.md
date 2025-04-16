@@ -1,5 +1,5 @@
-Live app: [test-quiz.eu-central-1.elasticbeanstalk.com](http://test-quiz.eu-central-1.elasticbeanstalk.com/)
 
+![AWS](https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 ### Install deps
 ```sh
 npm install
