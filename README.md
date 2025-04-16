@@ -1,6 +1,9 @@
 
 ![AWS](https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
-### Install deps
+
+# Small proof-of-concept quiz app meant for straightforward deployment with ElasticBeanstalk
+
+## Install deps
 ```sh
 npm install
 ```
