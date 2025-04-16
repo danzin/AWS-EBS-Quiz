@@ -1,4 +1,4 @@
-Live app: test-quiz.eu-central-1.elasticbeanstalk.com
+Live app: [test-quiz.eu-central-1.elasticbeanstalk.com](http://test-quiz.eu-central-1.elasticbeanstalk.com/)
 
 ### Install deps
 ```sh
