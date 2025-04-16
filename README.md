@@ -1,3 +1,5 @@
+Live app: test-quiz.eu-central-1.elasticbeanstalk.com
+
 ### Install deps
 ```sh
 npm install
